@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" adaptive="false" identifier="minimal" timeDependent="false" title="Minimal QTI 2.1 Example" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p1 http://www.imsglobal.org/xsd/imsqti_v2p1.xsd">
+  <responseDeclaration baseType="identifier" cardinality="single" identifier="RESPONSE">
+    <correctResponse>
+      <value>CHOICEA</value>
+    </correctResponse>
+  </responseDeclaration>
+  <outcomeDeclaration baseType="float" cardinality="single" identifier="SCORE">
+    <defaultValue>
+      <value>0.0</value>
+    </defaultValue>
+  </outcomeDeclaration>
+  <itemBody>
+    <p>Minimal Example</p>
+    <choiceInteraction maxChoices="1" responseIdentifier="RESPONSE" shuffle="true">
+      <prompt>Pick the correct answer</prompt>
+      <simpleChoice identifier="CHOICE1">Choice1</simpleChoice>
+      <simpleChoice identifier="CHOICE2">Choice 2</simpleChoice>
+    </choiceInteraction>
+  </itemBody>
+  <responseProcessing template="http://www.imsglobal.org/questin/qti_v2p1/rptemplates/match_correct"/>
+</assessmentItem>
